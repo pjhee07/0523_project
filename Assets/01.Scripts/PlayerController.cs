@@ -28,14 +28,17 @@ public class PlayerController : MonoBehaviour
     }
     private void PlayerJump()
     {
-        if (!isJumping)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            isJumping = true;
-            rigid.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
-        }
-        else
-        {
-            return;
+            if (!isJumping)
+            {
+                isJumping = true;
+                rigid.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+            }
+            else
+            {
+                return;
+            }
         }
     }
     private void OnCollisionEnter(Collision collision)
