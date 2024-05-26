@@ -22,9 +22,9 @@ public class PlayerController : MonoBehaviour
     private void PlayerMove()
     {
         float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
+        //float y = Input.GetAxisRaw("Vertical");
 
-        transform.Translate((new Vector3(x, 0, y) * moveSpeed) * Time.deltaTime);
+        transform.Translate((new Vector3(x, 0, 0) * moveSpeed) * Time.deltaTime);
     }
     private void PlayerJump()
     {
