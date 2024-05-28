@@ -7,7 +7,11 @@ public class SceneChanger : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("SelectStage");
+    }
+    public void BacktoStart()
+    {
+        SceneManager.LoadScene("Start");
     }
     public void ExitGame()
     {
