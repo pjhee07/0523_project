@@ -13,6 +13,10 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Start");
     }
+    public void OneStage()
+    {
+        SceneManager.LoadScene("Game1");
+    }
     public void ExitGame()
     {
         Application.Quit();
