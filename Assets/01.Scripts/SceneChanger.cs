@@ -22,4 +22,5 @@ public class SceneChanger : MonoBehaviour
         Application.Quit();
         Debug.Log("exit");
     }
+
 }
