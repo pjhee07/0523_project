@@ -49,6 +49,11 @@ public class PlayerController : MonoBehaviour
         {
             isJumping = false;
         }
+
+        if (collision.gameObject.CompareTag("Obj"))
+        {
+
+        }
     }
 }
 
