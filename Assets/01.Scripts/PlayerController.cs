@@ -8,10 +8,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int jumpPower;
     [SerializeField] private int moveSpeed;
     private bool isJumping;
+    private Animator animator;
 
     private void Start()
     {
         rigid = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
         isJumping = false;
     }
     private void Update()
