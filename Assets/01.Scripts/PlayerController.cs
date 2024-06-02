@@ -7,9 +7,11 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody rigid;
     [SerializeField] private int jumpPower;
-    [SerializeField] private int moveSpeed;
+    [SerializeField] public int moveSpeed;
     private bool isJumping;
     private Animator animator;
+    private bool isMoving;
+    [SerializeField] private GameObject Item1;
 
     private void Start()
     {
@@ -56,6 +58,17 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Die");
             SceneManager.LoadScene("GameOver");
         }
+
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            StartCoroutine(MoveStop());
+        }
+    }
+    IEnumerator MoveStop()
+    {
+        moveSpeed = 0;
+        yield return new WaitForSeconds(1.5f);
+        moveSpeed = 10;
     }
 }
 
