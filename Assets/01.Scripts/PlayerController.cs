@@ -63,11 +63,22 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(MoveStop());
         }
+
+        if (collision.gameObject.CompareTag("Item2"))
+        {
+            StartCoroutine(MoveFast());
+        }
     }
     IEnumerator MoveStop()
     {
         moveSpeed = 0;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
+        moveSpeed = 10;
+    }
+    IEnumerator MoveFast()
+    {
+        moveSpeed = 20;
+        yield return new WaitForSeconds(2.3f);
         moveSpeed = 10;
     }
 }
