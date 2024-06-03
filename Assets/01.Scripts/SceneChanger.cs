@@ -17,6 +17,10 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Game1");
     }
+    public void TwoStage()
+    {
+        SceneManager.LoadScene("Game2");
+    }
     public void ExitGame()
     {
         Application.Quit();
