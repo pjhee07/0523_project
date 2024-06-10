@@ -6271,7 +6271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB0A8\uC740 \uAC70\uB9AC: 000"
+  m_text: "\uB0A8\uC740 \uAC70\uB9AC: 00"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e9bbf6f5af9ec34a8bc133bb4708b41, type: 2}
   m_sharedMaterial: {fileID: -5831611981848005387, guid: 7e9bbf6f5af9ec34a8bc133bb4708b41,
@@ -6365,7 +6365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 739, y: 488}
+  m_AnchoredPosition: {x: 782, y: 488}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1991438148
