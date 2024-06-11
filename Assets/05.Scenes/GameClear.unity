@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 430660305}
   - component: {fileID: 430660304}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 254936f614296594d839d20688c8294e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -696,6 +696,7 @@ GameObject:
   - component: {fileID: 1196089153}
   - component: {fileID: 1196089152}
   - component: {fileID: 1196089151}
+  - component: {fileID: 1196089154}
   m_Layer: 5
   m_Name: TurnToSelectBtn
   m_TagString: Untagged
@@ -720,7 +721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 673, y: -341}
+  m_AnchoredPosition: {x: 652, y: -322}
   m_SizeDelta: {x: 426.5845, y: 255.3905}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196089151
@@ -817,6 +818,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196089149}
   m_CullTransparentMesh: 1
+--- !u!114 &1196089154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196089149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.6773585, g: 0.7433587, b: 1, a: 1}
+  m_EffectDistance: {x: 15, y: -15}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1446199623
 GameObject:
   m_ObjectHideFlags: 0

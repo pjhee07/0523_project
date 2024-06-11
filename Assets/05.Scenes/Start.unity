@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -360.85962, y: 266}
+  m_AnchoredPosition: {x: -382, y: 266}
   m_SizeDelta: {x: 904.4308, y: 279.7217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &350390066
@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 491020248}
   - component: {fileID: 491020247}
   - component: {fileID: 491020246}
+  - component: {fileID: 491020249}
   m_Layer: 5
   m_Name: ExitBtn
   m_TagString: Untagged
@@ -391,6 +392,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491020244}
   m_CullTransparentMesh: 1
+--- !u!114 &491020249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491020244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 0.7830188, b: 0.9816401, a: 1}
+  m_EffectDistance: {x: 15, y: -15}
+  m_UseGraphicAlpha: 1
 --- !u!1 &499025843
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,7 +809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c9f7adabb1c440e40ae3b1f002509f88, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -823,6 +839,7 @@ GameObject:
   - component: {fileID: 1272070039}
   - component: {fileID: 1272070038}
   - component: {fileID: 1272070037}
+  - component: {fileID: 1272070040}
   m_Layer: 5
   m_Name: StartBtn
   m_TagString: Untagged
@@ -944,6 +961,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272070035}
   m_CullTransparentMesh: 1
+--- !u!114 &1272070040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272070035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.7058824, g: 0.8593517, b: 1, a: 1}
+  m_EffectDistance: {x: 15, y: -15}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1741876530
 GameObject:
   m_ObjectHideFlags: 0

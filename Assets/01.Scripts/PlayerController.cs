@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator MoveFast()
     {
-        moveSpeed = 25;
+        moveSpeed = 20;
         yield return new WaitForSeconds(2.3f);
         moveSpeed = 10;
     }
