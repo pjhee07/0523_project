@@ -208,13 +208,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1834138261}
+        m_TargetAssemblyTypeName: Panel, Assembly-CSharp
+        m_MethodName: Open
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -490,7 +490,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 458691058}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834138261}
+        m_TargetAssemblyTypeName: Panel, Assembly-CSharp
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &458691058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1829,8 +1841,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1834138259}
   - component: {fileID: 1834138260}
+  - component: {fileID: 1834138261}
   m_Layer: 0
-  m_Name: SceneManager
+  m_Name: SystemManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1863,6 +1876,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58b319b4eda2f6b40809ce23fba47d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1834138261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834138258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8660d707077f974394a037aa5dada87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1880035282}
 --- !u!1 &1880035282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,5 +2214,5 @@ SceneRoots:
   - {fileID: 738835012}
   - {fileID: 499025845}
   - {fileID: 1915473966}
-  - {fileID: 1741876533}
   - {fileID: 1834138259}
+  - {fileID: 1741876533}
