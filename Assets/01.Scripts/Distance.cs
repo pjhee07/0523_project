@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using DG.Tweening;
 
 public class Distance : MonoBehaviour
 {
     public TextMeshProUGUI distanceText; 
     [SerializeField] private int distance;
+    [SerializeField] private RectTransform _imageRect;
     private float interval = 1f;
 
     void Start()
@@ -29,6 +31,11 @@ public class Distance : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("GameClear");
+        _imageRect.DOAnchorPosX(0, 0.5f)
+           .SetEase(Ease.OutCubic)
+           .OnComplete(() =>
+           {
+               SceneManager.LoadScene("GameClear");
+           });
     }
 }

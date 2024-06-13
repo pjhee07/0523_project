@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private Animator animator;
     private bool isMoving;
-    [SerializeField] private GameObject Item1;
+    //[SerializeField] private GameObject Item1;
+    [SerializeField] private RectTransform _imageRect;
 
     private void Start()
     {
@@ -56,7 +58,12 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Obj"))
         {
             animator.SetTrigger("Die");
-            SceneManager.LoadScene("GameOver");
+            _imageRect.DOAnchorPosX(0, 0.5f)
+           .SetEase(Ease.OutCubic)
+           .OnComplete(() =>
+           {
+               SceneManager.LoadScene("GameOver");
+           });
         }
 
         if (collision.gameObject.CompareTag("Item"))

@@ -396,7 +396,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 524, y: 365}
+  m_AnchoredPosition: {x: 524, y: 337}
   m_SizeDelta: {x: 651.2363, y: 129.8106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430660304
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 18e7aa7458431c347aaa056b9e1f1795, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 292aba717461b7d469f83556578f4091, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.6773585, g: 0.7433587, b: 1, a: 1}
+  m_EffectColor: {r: 0, g: 0.20731711, b: 1, a: 1}
   m_EffectDistance: {x: 15, y: -15}
   m_UseGraphicAlpha: 1
 --- !u!1 &1446199623
